@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rekap Pendapatan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script type="text/javascript" src="assets/js/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.19/sorting/date-uk.js"></script>
+    <script src="assets/js/main.js"></script>
+    <style>
+        div.dataTables_wrapper {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center
+        }
+        table.dataTable thead {
+            background-color:black;
+            color: white      
+        }
+        .pagination > li > a, .pagination > li > span{background-color:white !important; color: black}
+        .pagination > li.active > a, .pagination > li.active > span{background-color:black !important; color: white}
+    </style>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <table id="activityList" class="table table-hover table-striped"></table>
+    </div>
+    
+    <div id="chart" style="min-width: 800 !important"></div>
+</body>
+</html>
